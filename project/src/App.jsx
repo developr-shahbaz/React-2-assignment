@@ -1,5 +1,6 @@
 import { Component, useState } from 'react'
 import Student from './componint/Student'
+import Product from './componint/Product'
 import './App.css'
  
 function App(){
@@ -9,6 +10,7 @@ function App(){
   <p>me pakistan me raheta hon
   </p>
 <Student/>
+<Product/>
 </>
 )
 }
