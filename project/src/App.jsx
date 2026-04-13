@@ -1,7 +1,9 @@
 import { Component, useState } from 'react'
 import Student from './componint/Student'
 import Product from './componint/Product'
+import LiveInput from './componint/LiveInput'
 import './App.css'
+import Updatevalue from './componint/Updatevalue'
  
 function App(){
   return( 
@@ -11,6 +13,9 @@ function App(){
   </p>
 <Student/>
 <Product/>
+<Updatevalue/>
+<hr />
+<LiveInput/>
 
 
 </>
