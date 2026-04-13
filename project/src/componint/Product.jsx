@@ -1,34 +1,21 @@
-const product =[
-    {id : one , name : "samsung s9 +" ,price: 14000, category :"smart phone", raking :  10, inShort:true},
-    {id : tow , name : "HP laptop +" ,price: 40000, category :"smart computer", raking :  10.9, inShort:true},
-    {id : three , name : "tablet" ,price: 70000,category :"big smart touch phone", raking :  9.99, inShort:true},
-    {id : four , name : "iphone +" ,price: 14000,category :"iphone 15 max pro", raking :  5.99, inShort:true},
-    {id : five , name : "bike" ,price: 14000,category :"moter bike", raking :  7.99, inShort:true}
-]
 
 
-
-function Product({product}){
-
-    return(
-        <>
-        <div className="card">
-            <div className="cd-pro">
-                <h1>{product.name}</h1>
-                <span className="category">{product.category}</span>
-            </div>
-
-
-            
-            <div className="card-body">
-<p className="price">Rs.{product.price.toLocaleString()}</p>
-<p className="raking">⭐ { product.raking}/5</p>
-
-<span className={product.inShort?"in-stock":"out of indhort"}>{product.inShort?"in stock" :"out of stock"}</span>
-            </div>
+const products = [
+  { id: 1, name: "Samsung S9+",      price: 14000, category: "Smart Phone",       rating: 4.8, inStock: true  },
+  { id: 2, name: "HP Laptop",        price: 40000, category: "Smart Computer",     rating: 4.5, inStock: true  },
+  { id: 3, name: "iPad Tablet",      price: 70000, category: "Big Smart Tablet",   rating: 4.9, inStock: true  },
+  { id: 4, name: "iPhone 15 Pro Max",price: 14000, category: "iPhone",             rating: 4.6, inStock: false },
+  { id: 5, name: "Motor Bike",       price: 14000, category: "Motor Bike",         rating: 3.9, inStock: true  },
+];
+function Product(){
+  return(
+    <div>
+      <h1>product list</h1>
+      {products.map((Product)=>(
+        <div key={products}> 
+          <li>name ={Product.name} price ={Product.price} category ={Product.category} raking={Product.rating}</li>
         </div>
-        </>
-    )
-}
-
-export default Product
+      ))}
+    </div>
+  )}
+export default Product;
