@@ -4,6 +4,8 @@ import Product from './componint/Product'
 import LiveInput from './componint/LiveInput'
 import './App.css'
 import Updatevalue from './componint/Updatevalue'
+import ShowMSG from './componint/ShowMSG'
+import Notifiction from './componint/Notifiction'
  
 function App(){
   return( 
@@ -16,6 +18,11 @@ function App(){
 <Updatevalue/>
 <hr />
 <LiveInput/>
+
+<ShowMSG  />
+<Notifiction unreadcount ={alert('hellow word')}/>
+
+
 
 
 </>
