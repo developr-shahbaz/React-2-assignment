@@ -6,6 +6,7 @@ import './App.css'
 import Updatevalue from './componint/Updatevalue'
 import ShowMSG from './componint/ShowMSG'
 import Notifiction from './componint/Notifiction'
+import LoginForm from './componint/LoginForm'
  
 function App(){
   return( 
@@ -20,8 +21,8 @@ function App(){
 <LiveInput/>
 
 <ShowMSG  />
-<Notifiction unreadcount ={alert('hellow word')}/>
-
+<Notifiction unreadcount ={2}/>
+<LoginForm/>
 
 
 
